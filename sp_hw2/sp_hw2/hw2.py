@@ -9,25 +9,20 @@ def generate_latex_table(data):
     Returns:
         str: A string containing the LaTeX code for the table.
     """
-    # Determine the number of columns in the table
-    num_cols = len(data[0])
 
-    # Generate the LaTeX table header
-    table_header = "\\begin{tabular}{" + " | ".join(["c"] * num_cols) + "}\n"
+    def generate_header():
+        # Generate the LaTeX table header
+        return "\\begin{tabular}{" + " | ".join(["c"] * len(data[0])) + "}\n" + "\\hline\n"
 
-    # Generate the LaTeX table body
-    table_body = ""
-    for row in data:
-        table_body += "\\hline\n"
-        table_body += " & ".join([str(cell) for cell in row]) + " \\\\\n"
+    def generate_body():
+        return "\\hline\n".join([(" & ".join([str(cell) for cell in row]) 
+                                  + " \\\\\n") for row in data])
     
+    def generate_footer():
     # Generate the LaTeX table footer
-    table_footer = "\\hline\n\\end{tabular}\n"
+        return "\\hline\n\\end{tabular}\n"
 
-    # Combine the table components into a single LaTeX table string
-    latex_table = table_header + table_body + table_footer
-
-    return latex_table
+    return "".join([generate_header(), generate_body(), generate_footer()])
 
 
 
