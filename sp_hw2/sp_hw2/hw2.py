@@ -34,7 +34,7 @@ def get_artifacts_name(filename):
 
 
 def generate_latex_image(filename):
-    return "\includegraphics[scale=0.8]{" + filename + "}"
+    return "\\includegraphics[scale=0.8]{" + filename + "} "
 
 
 def generate_tex_string():
@@ -42,11 +42,11 @@ def generate_tex_string():
         return "\\documentclass{article}\n\\usepackage{graphicx} % Required for inserting images\n\\title{Example_python}\n\\author{ivan.kozzloff98 }\n\\date{March 2023}\n\\begin{document}\n\\section{Homework 2}\n"
     
     def generate_footer():
-        return "\end{document}"
+        return "\\end{document}"
 
-    ast_filename = "ast_tree.png"
+    ast_filename = get_artifacts_name("ast_tree.png")
     # generate ast tree
-    task2_3(get_artifacts_name(ast_filename))
+    task2_3(ast_filename)
 
     return "".join([
         generate_header(), 
@@ -65,3 +65,4 @@ def generate_tex_file(filename):
 
 if __name__ == '__main__':
     generate_tex_file("result_tex_file.tex")
+
