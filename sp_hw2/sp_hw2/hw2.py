@@ -1,3 +1,7 @@
+from sp_hw1.hw1 import task2_3
+
+
+ARTIFACTS_DIR = "sp_hw2/artifacts/"
 
 def generate_latex_table(data):
     """
@@ -25,8 +29,39 @@ def generate_latex_table(data):
     return "".join([generate_header(), generate_body(), generate_footer()])
 
 
+def get_artifacts_name(filename):
+    return ARTIFACTS_DIR + filename
+
+
+def generate_latex_image(filename):
+    return "\includegraphics[scale=0.8]{" + filename + "}"
+
+
+def generate_tex_string():
+    def generate_header():
+        return "\\documentclass{article}\n\\usepackage{graphicx} % Required for inserting images\n\\title{Example_python}\n\\author{ivan.kozzloff98 }\n\\date{March 2023}\n\\begin{document}\n\\section{Homework 2}\n"
+    
+    def generate_footer():
+        return "\end{document}"
+
+    ast_filename = "ast_tree.png"
+    # generate ast tree
+    task2_3(get_artifacts_name(ast_filename))
+
+    return "".join([
+        generate_header(), 
+        generate_latex_table([[1, 2], [4, 5], [7, 8]]),
+        "\\newline \n",
+        generate_latex_image(ast_filename),
+        "\\newline \n",
+        generate_footer()])
+
+
+def generate_tex_file(filename):
+    with open(get_artifacts_name(filename), 'w') as f:
+        tex_string = generate_tex_string()
+        f.write(tex_string)
+
 
 if __name__ == '__main__':
-    data = [[1, 2], [4, 5], [7, 8]]
-    latex_table = generate_latex_table(data)
-    print(latex_table)
+    generate_tex_file("result_tex_file.tex")
