@@ -1,0 +1,73 @@
+n_jobs,execution_time
+1,0.003066 <- ThreadPoolExecutor 
+1,0.375339 <- ProcessPoolExecutor 
+-----------
+2,0.000944 <- ThreadPoolExecutor 
+2,0.382177 <- ProcessPoolExecutor 
+-----------
+3,0.001265 <- ThreadPoolExecutor 
+3,0.417259 <- ProcessPoolExecutor 
+-----------
+4,0.001986 <- ThreadPoolExecutor 
+4,0.488385 <- ProcessPoolExecutor 
+-----------
+5,0.001921 <- ThreadPoolExecutor 
+5,0.554317 <- ProcessPoolExecutor 
+-----------
+6,0.002646 <- ThreadPoolExecutor 
+6,0.581294 <- ProcessPoolExecutor 
+-----------
+7,0.002456 <- ThreadPoolExecutor 
+7,0.632766 <- ProcessPoolExecutor 
+-----------
+8,0.002726 <- ThreadPoolExecutor 
+8,0.744127 <- ProcessPoolExecutor 
+-----------
+9,0.002832 <- ThreadPoolExecutor 
+9,0.832667 <- ProcessPoolExecutor 
+-----------
+10,0.003276 <- ThreadPoolExecutor 
+10,0.894578 <- ProcessPoolExecutor 
+-----------
+11,0.003637 <- ThreadPoolExecutor 
+11,0.998451 <- ProcessPoolExecutor 
+-----------
+12,0.004006 <- ThreadPoolExecutor 
+12,1.029844 <- ProcessPoolExecutor 
+-----------
+13,0.004295 <- ThreadPoolExecutor 
+13,1.204874 <- ProcessPoolExecutor 
+-----------
+14,0.004483 <- ThreadPoolExecutor 
+14,1.592628 <- ProcessPoolExecutor 
+-----------
+15,0.005361 <- ThreadPoolExecutor 
+15,1.541792 <- ProcessPoolExecutor 
+-----------
+16,0.006361 <- ThreadPoolExecutor 
+16,1.856255 <- ProcessPoolExecutor 
+-----------
+17,0.006311 <- ThreadPoolExecutor 
+17,1.857222 <- ProcessPoolExecutor 
+-----------
+18,0.005880 <- ThreadPoolExecutor 
+18,1.696170 <- ProcessPoolExecutor 
+-----------
+19,0.006096 <- ThreadPoolExecutor 
+19,1.764930 <- ProcessPoolExecutor 
+-----------
+20,0.006318 <- ThreadPoolExecutor 
+20,2.014669 <- ProcessPoolExecutor 
+-----------
+21,0.008316 <- ThreadPoolExecutor 
+21,2.912876 <- ProcessPoolExecutor 
+-----------
+22,0.007770 <- ThreadPoolExecutor 
+22,2.135558 <- ProcessPoolExecutor 
+-----------
+23,0.007063 <- ThreadPoolExecutor 
+23,2.302169 <- ProcessPoolExecutor 
+-----------
+24,0.007550 <- ThreadPoolExecutor 
+24,2.216619 <- ProcessPoolExecutor 
+-----------
