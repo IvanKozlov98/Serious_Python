@@ -1,0 +1,25 @@
+2023-04-04 16:49:22,061 [INFO] Start logging
+2023-04-04 16:49:26,311 [INFO] User input: hello
+2023-04-04 16:49:30,607 [INFO] User input: how are you
+2023-04-04 16:49:30,830 [INFO] Process A received: hello, Process A sent: hello
+2023-04-04 16:49:30,831 [INFO] Process B received: hello, Process B sent: uryyb
+2023-04-04 16:49:35,832 [INFO] Process A received: how are you, Process A sent: how are you
+2023-04-04 16:49:35,832 [INFO] Process B received: how are you, Process B sent: ubj ner lbh
+2023-04-04 16:49:37,488 [INFO] User input: i'm fine
+2023-04-04 16:49:37,488 [INFO] Rot13 encoded message: uryyb
+2023-04-04 16:49:40,834 [INFO] Process A received: i'm fine, Process A sent: i'm fine
+2023-04-04 16:49:40,835 [INFO] Process B received: i'm fine, Process B sent: v'z svar
+2023-04-04 16:49:43,214 [INFO] User input: what
+2023-04-04 16:49:43,215 [INFO] Rot13 encoded message: ubj ner lbh
+2023-04-04 16:49:45,843 [INFO] Process A received: what, Process A sent: what
+2023-04-04 16:49:45,844 [INFO] Process B received: what, Process B sent: jung
+2023-04-04 16:49:46,607 [INFO] User input: a iii
+2023-04-04 16:49:46,608 [INFO] Rot13 encoded message: v'z svar
+2023-04-04 16:49:49,271 [INFO] User input: vv
+2023-04-04 16:49:49,271 [INFO] Rot13 encoded message: jung
+2023-04-04 16:49:50,695 [INFO] User input: vvv
+2023-04-04 16:49:50,856 [INFO] Process A received: a iii, Process A sent: a iii
+2023-04-04 16:49:50,857 [INFO] Process B received: a iii, Process B sent: n vvv
+2023-04-04 16:49:53,759 [INFO] User input: exit
+2023-04-04 16:49:55,870 [INFO] Process A received: vv, Process A sent: vv
+2023-04-04 16:50:00,871 [INFO] Process A received: vvv, Process A sent: vvv
